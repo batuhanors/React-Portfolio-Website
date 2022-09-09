@@ -84,13 +84,22 @@ const NavBar = () => {
               <a
                 href="https://www.linkedin.com/in/batuhan-ors-b910b5203/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src={navIcon1}></img>
               </a>
-              <a href="https://github.com/batuhanors" target="_blank">
+              <a
+                href="https://github.com/batuhanors"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={navIcon2}></img>
               </a>
-              <a href="https://www.instagram.com/batuhan.ors_" target="_blank">
+              <a
+                href="https://www.instagram.com/batuhan.ors_"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={navIcon3}></img>
               </a>
               <a

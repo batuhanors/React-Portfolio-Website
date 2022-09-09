@@ -16,7 +16,8 @@ const Banner = () => {
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <h1>
-              {"Hi! My name is Batuhan Örs"} <br></br>
+              Hi! My name is <span className="banner-name">Batuhan Örs</span>{" "}
+              <br></br>
               <span className="wrap">
                 <Typewriter
                   options={{

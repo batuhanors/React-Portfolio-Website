@@ -14,9 +14,26 @@
   margin-bottom: 20px;
   display: block;
 }
-.banner h1 span {
+.wrap {
   font-size: 40px;
   font-weight: 300;
+}
+.banner-name {
+  color: #bface0;
+  text-shadow: 0 0 0.05em #a084ca, 0 0 0.1em #25316d, 0 0 0.15em #25316d;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 3px #a084ca, 0 0 5px #fff, 0 0 10px #25316d,
+      0 0 10px #25316d, 0 0 50px #25316d, 0 0 60px #25316d, 0 0 70px #25316d;
+  }
+
+  to {
+    text-shadow: 0 0 5px #a084ca, 0 0 8px #645caa, 0 0 12px #645caa,
+      0 0 15px #645caa, 0 0 60px #645caa, 0 0 70px #645caa, 0 0 80px #645caa;
+  }
 }
 .banner p {
   color: #b8b8b8;
@@ -26,9 +43,9 @@
   width: 96%;
 }
 .banner img {
-  animation: updown 3s linear infinite;
+  animation: float 4s linear infinite;
 }
-@keyframes updown {
+@keyframes float {
   0% {
     transform: translateY(-20px);
   }
@@ -44,12 +61,23 @@
 }
 
 @media screen and (max-width: 512px) {
+  .banner {
+    padding: 120px 0 100px 0;
+  }
+
   .banner h1 {
     font-size: 36px;
     line-height: 1.2;
   }
 
   .banner h1 span {
+    background-color: rgb(18, 18, 18, 0.7);
+  }
+  .banner-name {
+    border-radius: 4px;
+  }
+
+  .wrap {
     font-size: 27px;
   }
 

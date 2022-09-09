@@ -14,16 +14,15 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: #121212 !important;
-  height: 200rem;
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #121212;
+  background: transparent;
 }
 
 /* Handle */
@@ -97,4 +96,26 @@ p.danger {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: #e1d9d1 !important;
+}
+
+#myBtn {
+  position: fixed;
+  bottom: -80px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(160, 132, 202, 0.5);
+  cursor: pointer;
+  padding: 0.6rem 0rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+
+.top-img {
+  width: 50%;
+  height: auto;
 }
