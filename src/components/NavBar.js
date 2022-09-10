@@ -70,11 +70,11 @@ const NavBar = () => {
               Portfolio Projects
             </Nav.Link>
             <Nav.Link
-              href="#projects"
+              href="#about"
               className={
-                activeLink === "projects" ? "active navbar-link" : "navbar-link"
+                activeLink === "about" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("projects")}
+              onClick={() => onUpdateActiveLink("about")}
             >
               About
             </Nav.Link>

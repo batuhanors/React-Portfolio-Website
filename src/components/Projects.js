@@ -16,8 +16,9 @@ const Projects = () => {
         <p>
           I constantly try to learn new things, new technologies and in order to
           do that, I am continuously developing new web apps. Here you can find
-          few of them. You can hover for more info, and if you on mobile, just
-          tap to images.
+          few of them.{" "}
+          <span className="desktop"> You can hover images for more info</span>
+          <span className="mobile"> You can tap the images for more info</span>
         </p>
         <Row>
           <Col lg={6}>

@@ -19,15 +19,29 @@ nav.navbar a.navbar-brand {
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 300;
-  color: #fff !important;
+  color: #fff;
   letter-spacing: 0.8px;
-  padding: 0 30px;
+  padding: 0;
+  margin: 0 30px;
   font-size: 18px;
   opacity: 0.75;
+  width: fit-content;
+
+  background-image: linear-gradient(#a88beb, #f8ceec);
+  background-size: 0% 1px;
+  background-position-y: 100%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out, color 0.3s;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+nav.navbar .navbar-nav {
   opacity: 1;
+  background-size: 100% 1px;
+  color: #a084ca !important;
+}
+a.nav-link.navbar-link.active {
+  color: #a084ca !important;
 }
 .social-icon {
   display: inline-block;
